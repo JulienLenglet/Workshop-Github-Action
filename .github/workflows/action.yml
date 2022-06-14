@@ -6,22 +6,10 @@ on:
       - "main"
 
 jobs:
-  My_first_action:
-    name: "Greetings"
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - id: echo_command
-        run: |
-          echo "Hello, world!"
-          mkdir -p Plop
-          ls Plop > test.txt
-          mv test.txt Plop/
-          ls Plop
   Hello_Python:
     name: "Hello_python"
     runs-on: ubuntu-latest
-    steps :
+    steps:
       - uses: actions/checkout@v2
       - id: exec_cmd
       run: |
