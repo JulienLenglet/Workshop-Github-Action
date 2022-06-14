@@ -18,3 +18,4 @@ jobs:
           mkdir -p Plop
           ls Plop > test.txt
           mv test.txt Plop/
+          ls Plop
