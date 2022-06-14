@@ -16,6 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: check_if_compil
-        run: cd app/c make
+        run: cd app/c && make
         timeout-minutes: 2
       - run: make clean
