@@ -15,4 +15,6 @@ jobs:
       - id: echo_command
         run: |
           echo "Hello, world!"
-          mkdir -p Polp
+          mkdir -p Plop
+          ls Plop > test.txt
+          mv test.txt Polp/
