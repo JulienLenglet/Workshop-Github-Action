@@ -15,4 +15,4 @@ jobs:
       - id: echo_command
         run: |
           echo "Hello, world!"
-          mkdir -p Polp/ && cp -R dist Plop/
+          mkdir -p Polp
