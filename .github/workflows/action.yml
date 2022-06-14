@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: echo_command
-        run: echo "Hello, world!"
+        run: echo "Hello, world!" | mkdir -p plop
