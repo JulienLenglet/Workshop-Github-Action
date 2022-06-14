@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - id: echo "Hello, world!"
+      - id: echo_command
         run: echo "Hello, world!"
