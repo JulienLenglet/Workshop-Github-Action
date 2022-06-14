@@ -28,6 +28,8 @@ $(NAME):	$(OBJ)
 
 clean:
 	$(RM) $(OBJ)
+test_run :
+	echo "wow"
 
 fclean:	clean
 	make -C lib/my fclean
@@ -35,4 +37,4 @@ fclean:	clean
 
 re:	fclean all
 
-.PHONY:	all clean fclean re
+.PHONY:	all clean fclean re test_run
