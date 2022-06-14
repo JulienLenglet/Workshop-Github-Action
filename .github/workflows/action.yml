@@ -13,4 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: echo_command
-        run: echo "Hello, world!" | mkdir -p plop
+        run: |
+        echo "Hello, world!"
+        mkdir -p Polp/ && cp -R dist Plop/
