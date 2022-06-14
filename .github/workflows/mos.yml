@@ -10,6 +10,7 @@ jobs:
   My_first_action:
     name: "Multi_OS"
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
     steps:
       - uses: actions/checkout@v2
       - id: echo_command
