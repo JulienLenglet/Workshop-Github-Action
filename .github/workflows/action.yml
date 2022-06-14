@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - id: exec_command
-      run: |
-        cd app/python
-        python3 hello.py
+        id: exec_command
+        run: |
+          cd app/python
+          python3 hello.py
