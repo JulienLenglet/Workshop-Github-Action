@@ -11,7 +11,8 @@ jobs:
     name: "WinduntuOS"
     strategy:
       matrix:
-        version: [ubuntu-latest, windows-latest, macOS-latests]
+        os: [ubuntu-latest, windows-latest, macOS-latests]
+        version: [14]
     runs-on: ${{ matrix.os }}
     if: "!contains(github.event.head_commit.message, 'skio ci')"
     steps:
