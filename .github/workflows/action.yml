@@ -1,5 +1,8 @@
 on:
   push:
+    branches :
+      - "master"
+      - "main"
     branches-ignore:
     - "ga-ignore-*"
   pull_request:

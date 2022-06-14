@@ -2,6 +2,9 @@ name: Multi_OS
 
 on:
   push:
+    branches :
+      - "master"
+      - "main"
     branches-ignore:
     - "ga-ignore-*"
     tags-ignore:
