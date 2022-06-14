@@ -7,7 +7,7 @@ on:
     - "ga-ignore-*"
 
 jobs:
-  My first action:
+  My_first_action:
     name: "Greetings"
     runs-on: ubuntu-latest
     steps:
