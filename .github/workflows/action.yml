@@ -21,7 +21,7 @@ jobs:
   Hello_Python:
     name: "Hello_python"
     runs-on: ubuntu-latest
-    steps:
+    steps :
       - uses: actions/checkout@v2
       - id: exec_cmd
       run: |
