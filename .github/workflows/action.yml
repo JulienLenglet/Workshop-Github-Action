@@ -17,4 +17,4 @@ jobs:
           echo "Hello, world!"
           mkdir -p Plop
           ls Plop > test.txt
-          mv test.txt Polp/
+          mv test.txt Plop/
