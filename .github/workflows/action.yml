@@ -1,5 +1,3 @@
-name: My first action
-
 on:
   push:
     branches-ignore:
@@ -9,10 +7,10 @@ on:
     - "ga-ignore-*"
 
 jobs:
-  Greetings:
-    name: "Setup job"
+  My first action:
+    name: "Greetings"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - id: echo
-        run: echo "Hello"
+      - id: echo "Hello, world!"
+        run: echo "Hello, world!"
