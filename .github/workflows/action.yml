@@ -9,7 +9,7 @@ on:
     - "ga-ignore-*"
 
 jobs:
-    Greetings:
+  Greetings:
     name: "Setup job"
     runs-on: ubuntu-latest
     steps:
