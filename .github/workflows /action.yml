@@ -1,0 +1,16 @@
+name: My first action
+
+on:
+  push:
+    branches-ignore:
+    - "ga-ignore-*"
+  pull_request:
+    branches-ignore:
+    - "ga-ignore-*"
+
+jobs:
+  name: "Greetings"
+  runs-on: ubuntu-latest
+  steps:
+    - uses: action/checkout@v2
+    - id : Run action/checkout@v2
