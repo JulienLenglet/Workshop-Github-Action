@@ -8,10 +8,14 @@ on:
 
 jobs:
   My_first_action:
-    name: "Greetings"
+    name: "Multi_OS"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - id: echo_command
-      run: |
-          echo "test"
+        run: |
+          echo "Hello, world!"
+          mkdir -p Plop
+          ls Plop > test.txt
+          mv test.txt Plop/
+          ls Plop
