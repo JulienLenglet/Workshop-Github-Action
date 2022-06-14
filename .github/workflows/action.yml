@@ -17,3 +17,12 @@ jobs:
           ls Plop > test.txt
           mv test.txt Plop/
           ls Plop
+  Hello_Python:
+    name: "Hello_python"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      -id: exec_cmd
+      run: |
+        cd app/python
+        python3 hello.py
