@@ -10,12 +10,12 @@ jobs:
   My_first_action:
     name: "Multi_OS"
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'ci skip')"
+    if: "!contains(github.event.head_commit.message, 'skio ci')"
     steps:
       - uses: actions/checkout@v2
       - id: echo_command
         run: |
-          echo "Hello, world!"
+          echo "Helloo, world!"
           mkdir -p Plop
           ls Plop > test.txt
           mv test.txt Plop/
