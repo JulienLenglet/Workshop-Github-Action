@@ -9,8 +9,9 @@ on:
     - "ga-ignore-*"
 
 jobs:
-  name: "Greetings"
-  runs-on: ubuntu-latest
-  steps:
-    - uses: action/checkout@v2
-    - id : Run action/checkout@v2
+  Greetings:
+    name: "Greetings"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v2
+      - id : Run action/checkout@v2
