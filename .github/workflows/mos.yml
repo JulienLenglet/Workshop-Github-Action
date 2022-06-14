@@ -8,15 +8,13 @@ on:
 
 jobs:
   My_first_action:
-    name: "Multi_OS"
-    runs-on: ubuntu-latest
+    name: "WinduntuOS"
+    strategy:
+      matrix:
+        version: [ubuntu-latest, windows-latest, macOS-latests]
     if: "!contains(github.event.head_commit.message, 'skio ci')"
     steps:
       - uses: actions/checkout@v2
       - id: echo_command
         run: |
-          echo "Helloo, world!"
-          mkdir -p Plop
-          ls Plop > test.txt
-          mv test.txt Plop/
-          ls Plop
+          echo "Hello from" ${{ matrix.version }}
